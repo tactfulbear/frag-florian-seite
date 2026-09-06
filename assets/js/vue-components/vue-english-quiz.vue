@@ -1,5 +1,5 @@
 <template>
-    <vue-quiz :lg="lg" :questions="questions" name="English-Quiz"></vue-quiz>
+    <vue-quiz :lg="lg" :questions="questions" name="English-Quiz" quiz="english"></vue-quiz>
 </template>
 
 <script>
@@ -22,28 +22,7 @@ export default {
   
   data() {
     return {
-       questions: 
-      [
-		{
-			topics: ["Conjugation of to be"],
-		    instruction: "Conjugate the verb to be !",
-			type: 'gapText',
-			imageUrl: "assets/img/spanisch/bonitamuyer.jpg",
-			gapText: "The woman {is|am|are} beautiful."
-		},
-
-		{
-			topics: ["Conjugation of to be"],
-		    instruction: "Conjugate the verb to be !",
-			type: 'gapText',
-			imageUrl: "assets/img/spanisch/coche.jpg",
-			gapText: "This car {is|am|are} red!"
-		}
-
-	
-		
-
-]
+       questions: []
     };
   },
  
