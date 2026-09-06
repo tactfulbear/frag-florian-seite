@@ -39,8 +39,18 @@
       </option>
   
 </select>
-
-    <VueImage v-if="i < displayedQuestions.length" :imageUrl="displayedQuestions[i].imageUrl">
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="exercise-tab" data-bs-toggle="tab" data-bs-target="#exercise" type="button" role="tab" aria-controls="exercise" aria-selected="true">Exercises</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="tutorial-tab" data-bs-toggle="tab" data-bs-target="#tutorial" type="button" role="tab" aria-controls="tutorial" aria-selected="false">Tutorial</button>
+  </li>
+  
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="exercise" role="tabpanel" aria-labelledby="exercise-tab">
+     <VueImage v-if="i < displayedQuestions.length" :imageUrl="displayedQuestions[i].imageUrl">
       <VueMCGaps v-if="displayedQuestions[i].type === 'gapText'" :instruction="displayedQuestions[i].instruction" :gaptext="displayedQuestions[i].gapText" :lg="lg" :key="i"></VueMCGaps>
       <VueQuestion v-if="displayedQuestions[i].type === 'multiple choice' || displayedQuestions[i].type === 'multipleChoice'" :question="displayedQuestions[i]" :lg="lg" @answered-event="calcScore"></VueQuestion>
     </VueImage>
@@ -79,6 +89,14 @@
   </ul>
 
   <p>Your score: {{ scoreText }} </p>
+
+
+  </div>
+  <div class="tab-pane fade" id="tutorial" role="tabpanel" aria-labelledby="tutorial-tab">...</div>
+  
+</div>
+
+   
 </div>
 
     
@@ -100,7 +118,7 @@ export default {
     VueNewExercise
   
   },
-  props: ['questions', 'lg'],
+  props: ['questions', 'name','lg'],
 
   setup(){
      console.log("The setup function is executed!");

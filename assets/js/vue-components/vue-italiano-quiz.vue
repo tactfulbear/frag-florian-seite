@@ -1,5 +1,5 @@
 <template>
-    <vue-quiz :lg="lg" :questions="questions"></vue-quiz>
+    <vue-quiz :lg="lg" :questions="questions" :name="Italian-Quiz"></vue-quiz>
 </template>
 
 <script>
@@ -1688,6 +1688,42 @@ export default {
       "Prépositions"
     ],
     instruction: "Choose the correct preposition !"
+  },
+  {
+    type: "gapText",
+    imageUrl: "assets/img/spanisch/jugadordefutbol.jpg",
+    gapText: "A Ivan Botella piace allenarsi a meno que {piova|piove}.",
+    topics: [
+      "Propositions exprimant l'exception"
+    ],
+    instruction: "Indicativ ou subjonctif ?"
+  },
+  {
+    type: "gapText",
+    imageUrl: "https://static.klipy.com/ii/d7aec6f6f171607374b2065c836f92f4/d8/e2/2PgKABxrdfGN.jpg",
+    gapText: "La rana non te dà la sua stecca a meno que gli {paghi} (pagare-tu) molti soldi. ",
+    topics: [
+      "Propositions exprimant l'exception"
+    ],
+    instruction: "Indicativ ou subjonctif ?"
+  },
+  {
+    type: "gapText",
+    imageUrl: "https://static.klipy.com/ii/d6b0ce929193df3c242ac34b5654d2ce/35/d9/RxZrFDyZ7lJ123lJ.jpg",
+    gapText: "La mia tortuga non sa fare niente di utile, fuorché {avere|ha|abbia} un aspetto molto carino.",
+    topics: [
+      "Propositions exprimant l'exception"
+    ],
+    instruction: "Indicativ ou subjonctif ?"
+  },
+  {
+    type: "gapText",
+    imageUrl: "https://static.klipy.com/ii/d6b0ce929193df3c242ac34b5654d2ce/35/d9/RxZrFDyZ7lJ123lJ.jpg",
+    gapText: "La mia tartaruga non sa fare niente di utile, fuorché {avere|ha|abbia} un aspetto molto carino.",
+    topics: [
+      "Propositions exprimant l'exception"
+    ],
+    instruction: "Indicativ ou subjonctif ?"
   }
 ],
     };
