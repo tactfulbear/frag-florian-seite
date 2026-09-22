@@ -29,6 +29,11 @@
     <Tutorium />
     <Online />
     <Praesenz />
+    <Feedbacks />
+    <Links />
+    <Impressum />
+    <UeberMich />
+    <WarumNachhilfeBeiFlorian />
   </main>
 </template>
 
@@ -61,4 +66,9 @@ import Unterrichtsmethode from "./abschnitte/Unterrichtsmethode.vue";
 import Tutorium from "./abschnitte/Tutorium.vue";
 import Online from "./abschnitte/Online.vue";
 import Praesenz from "./abschnitte/Praesenz.vue";
+import Feedbacks from "./abschnitte/Feedbacks.vue";
+import Links from "./abschnitte/Links.vue";
+import Impressum from "./abschnitte/Impressum.vue";
+import UeberMich from "./abschnitte/UeberMich.vue";
+import WarumNachhilfeBeiFlorian from "./abschnitte/WarumNachhilfeBeiFlorian.vue";
 </script>
