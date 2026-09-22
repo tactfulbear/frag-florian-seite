@@ -15,14 +15,24 @@ export default defineConfig({
   ],
   base: "./",
   build: {
+    // seite.ts wartet mit await auf die Sprachdatei, das können erst Browser ab 2021
+    target: "es2022",
     outDir: "../app",
     emptyOutDir: true,
+    // Alles CSS in eine app.css, auch das der nachgeladenen Teile
+    cssCodeSplit: false,
     rollupOptions: {
       input: "src/seite.ts",
       output: {
         entryFileNames: "app.js",
         chunkFileNames: "app-[name].js",
         assetFileNames: "app.[ext]",
+        // Bibliotheken, Quiz und gemeinsame Bausteine stecken in allen Sprachen und bekommen eigene Dateien
+        manualChunks(id) {
+          if (id.includes("node_modules")) return "vendor";
+          if (id.includes("/src/components/")) return "quiz";
+          if (id.includes("/src/seite/Vue")) return "bausteine";
+        },
       },
     },
   },

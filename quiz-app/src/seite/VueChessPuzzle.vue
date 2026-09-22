@@ -1,12 +1,12 @@
 <template>
   <div>
     <p>{{ frage }}</p>
-    <div ref="brettDiv" style="width: 200px; height: 200px"></div>
-    <p :style="{ color: farbe }">{{ meldung }}</p>
-    <button v-if="geloest && aktuell + 1 < raetsel.length" style="display: block" @click="naechstes">
+    <div ref="brettDiv" class="w-[200px] h-[200px]"></div>
+    <p :class="farbe === 'red' ? 'text-[color:red]' : 'text-[color:green]'">{{ meldung }}</p>
+    <button v-if="geloest && aktuell + 1 < raetsel.length" class="block" @click="naechstes">
       {{ t.naechstes }}
     </button>
-    <p v-if="geloest && aktuell + 1 === raetsel.length" style="color: green">{{ t.alle }}</p>
+    <p v-if="geloest && aktuell + 1 === raetsel.length" class="text-[color:green]">{{ t.alle }}</p>
   </div>
 </template>
 
