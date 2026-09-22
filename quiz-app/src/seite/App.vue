@@ -34,12 +34,14 @@
     <Impressum />
     <UeberMich />
     <WarumNachhilfeBeiFlorian />
+    <VueContact />
   </main>
 </template>
 
 <script setup lang="ts">
 import VueHeader from "./VueHeader.vue";
 import VueHero from "./VueHero.vue";
+import VueContact from "./VueContact.vue";
 import Nachhilfeangebot from "./abschnitte/Nachhilfeangebot.vue";
 import MatheUni from "./abschnitte/MatheUni.vue";
 import InfoUni from "./abschnitte/InfoUni.vue";
