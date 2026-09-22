@@ -22,6 +22,7 @@
     <Reiki />
     <LernenUndLehren />
     <Bewusstsein />
+    <Schach />
   </main>
 </template>
 
@@ -47,4 +48,5 @@ import Ernaehrung from "./abschnitte/Ernaehrung.vue";
 import Reiki from "./abschnitte/Reiki.vue";
 import LernenUndLehren from "./abschnitte/LernenUndLehren.vue";
 import Bewusstsein from "./abschnitte/Bewusstsein.vue";
+import Schach from "./abschnitte/Schach.vue";
 </script>
