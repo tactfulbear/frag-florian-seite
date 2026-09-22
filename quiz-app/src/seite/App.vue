@@ -9,6 +9,10 @@
     <PhysikUni />
     <Ingenieurwesen />
     <Chemie />
+    <MatheSchule />
+    <PhysikSchule />
+    <InfoSchule />
+    <ChemieSchule />
   </main>
 </template>
 
@@ -21,4 +25,8 @@ import InfoUni from "./abschnitte/InfoUni.vue";
 import PhysikUni from "./abschnitte/PhysikUni.vue";
 import Ingenieurwesen from "./abschnitte/Ingenieurwesen.vue";
 import Chemie from "./abschnitte/Chemie.vue";
+import MatheSchule from "./abschnitte/MatheSchule.vue";
+import PhysikSchule from "./abschnitte/PhysikSchule.vue";
+import InfoSchule from "./abschnitte/InfoSchule.vue";
+import ChemieSchule from "./abschnitte/ChemieSchule.vue";
 </script>
