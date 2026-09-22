@@ -1,0 +1,3 @@
+/* Nur die Hilfsklassen von Tailwind, die Grundgestaltung kommt weiter aus Bootstrap und style.css */
+@tailwind components;
+@tailwind utilities;
