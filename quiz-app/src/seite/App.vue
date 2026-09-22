@@ -23,6 +23,12 @@
     <LernenUndLehren />
     <Bewusstsein />
     <Schach />
+    <WebsitenUndFlyer />
+    <Preise />
+    <Unterrichtsmethode />
+    <Tutorium />
+    <Online />
+    <Praesenz />
   </main>
 </template>
 
@@ -49,4 +55,10 @@ import Reiki from "./abschnitte/Reiki.vue";
 import LernenUndLehren from "./abschnitte/LernenUndLehren.vue";
 import Bewusstsein from "./abschnitte/Bewusstsein.vue";
 import Schach from "./abschnitte/Schach.vue";
+import WebsitenUndFlyer from "./abschnitte/WebsitenUndFlyer.vue";
+import Preise from "./abschnitte/Preise.vue";
+import Unterrichtsmethode from "./abschnitte/Unterrichtsmethode.vue";
+import Tutorium from "./abschnitte/Tutorium.vue";
+import Online from "./abschnitte/Online.vue";
+import Praesenz from "./abschnitte/Praesenz.vue";
 </script>
