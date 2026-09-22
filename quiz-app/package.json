@@ -5,7 +5,9 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "vue-tsc -b && vite build",
+        "build": "vue-tsc -b && vite build && vite build --config vite.seite.config.ts",
+        "build:seite": "vite build --config vite.seite.config.ts",
+        "watch:seite": "vite build --watch --config vite.seite.config.ts",
         "preview": "vite preview"
     },
     "dependencies": {
