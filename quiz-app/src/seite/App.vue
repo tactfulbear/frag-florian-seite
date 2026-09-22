@@ -13,6 +13,11 @@
     <PhysikSchule />
     <InfoSchule />
     <ChemieSchule />
+    <Franzoesisch />
+    <Englisch />
+    <Spanisch />
+    <Italienisch />
+    <Deutsch />
   </main>
 </template>
 
@@ -29,4 +34,9 @@ import MatheSchule from "./abschnitte/MatheSchule.vue";
 import PhysikSchule from "./abschnitte/PhysikSchule.vue";
 import InfoSchule from "./abschnitte/InfoSchule.vue";
 import ChemieSchule from "./abschnitte/ChemieSchule.vue";
+import Franzoesisch from "./abschnitte/Franzoesisch.vue";
+import Englisch from "./abschnitte/Englisch.vue";
+import Spanisch from "./abschnitte/Spanisch.vue";
+import Italienisch from "./abschnitte/Italienisch.vue";
+import Deutsch from "./abschnitte/Deutsch.vue";
 </script>
