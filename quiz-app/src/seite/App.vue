@@ -18,6 +18,10 @@
     <Spanisch />
     <Italienisch />
     <Deutsch />
+    <Ernaehrung />
+    <Reiki />
+    <LernenUndLehren />
+    <Bewusstsein />
   </main>
 </template>
 
@@ -39,4 +43,8 @@ import Englisch from "./abschnitte/Englisch.vue";
 import Spanisch from "./abschnitte/Spanisch.vue";
 import Italienisch from "./abschnitte/Italienisch.vue";
 import Deutsch from "./abschnitte/Deutsch.vue";
+import Ernaehrung from "./abschnitte/Ernaehrung.vue";
+import Reiki from "./abschnitte/Reiki.vue";
+import LernenUndLehren from "./abschnitte/LernenUndLehren.vue";
+import Bewusstsein from "./abschnitte/Bewusstsein.vue";
 </script>
