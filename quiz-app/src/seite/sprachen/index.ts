@@ -2,7 +2,7 @@ import type { Component } from "vue";
 import type { Lang } from "../../types";
 
 // Welche Sprache eine Seite zeigt, steht in ihrer index*.html als data-sprache am <div id="app">.
-export type Sprache = "de" | "en" | "es";
+export type Sprache = "de" | "en" | "es" | "fr";
 
 export interface Eintrag {
   titel: string;
@@ -63,4 +63,5 @@ export const lader: Record<Sprache, () => Promise<{ default: Seite }>> = {
   de: () => import("./de"),
   en: () => import("./en"),
   es: () => import("./es"),
+  fr: () => import("./fr"),
 };
