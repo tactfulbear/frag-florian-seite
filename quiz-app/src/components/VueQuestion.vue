@@ -122,7 +122,7 @@ function validate(): void {
 
 function showSolution(): void {
   optionen.value.forEach((o) => {
-    o.checked = o.checked;
+    o.checked = o.correct;
   });
   if (!beantwortet.value) props.question.correctlyAnswered = false;
 }
