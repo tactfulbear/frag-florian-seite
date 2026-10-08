@@ -1,4 +1,4 @@
-import type { Seite } from "./index";
+import type { Nachrichten, Seite } from "./index";
 import Angebot from "../organisms/vorlage/Angebot.vue";
 import Mathe from "../organisms/vorlage/Mathe.vue";
 import Englisch from "../organisms/vorlage/Englisch.vue";
@@ -10,9 +10,7 @@ import Impressum from "../organisms/vorlage/Impressum.vue";
 // Beispielseite "Frag Lena!" für weitere Nachhilfelehrer (vorlage.html).
 // Eine neue Lehrerseite braucht nur diese Datei, den Ordner organisms/<name>/ und eine Hülle wie vorlage.html.
 const vorlage: Seite = {
-  logo: "Frag Lena!",
   start: "vorlage.html",
-  knopf: "Schreib mir eine Nachricht",
   heroBild: "assets/img/vorlage/hero.svg",
   menue: [
     {
@@ -37,27 +35,34 @@ const vorlage: Seite = {
   kontakt: {
     karteHoehe: "200px",
     containerId: "schreibmirnachricht",
-    adresse: "Adresse:",
-    email: "Email:",
     strasse: "Musterstraße 1",
     ort: "12345 Musterstadt",
     mailadresse: "lena@beispiel.de",
-    absatz:
-      "Schreib mir am besten eine E-Mail mit dem Thema, das gerade dran ist, oder benutze dieses Kontaktformular. Ich melde mich innerhalb eines Tages zurück.",
     formular: {
       // Hier gehört der eigene Schlüssel von web3forms.com hinein, sonst kommt die Nachricht nicht an.
       action: "https://api.web3forms.com/submit",
       botcheck: true,
-      name: "Dein Name",
-      mail: "Deine Email",
-      betreff: "Betreff",
-      nachricht: "Nachricht",
-      knopf: "Nachricht senden",
     },
   },
-  fuss: { telefon: "Telefon:", telefonnummer: "0123/456789", mailadresse: "lena@beispiel.de", sozial: false },
+  fuss: { telefonnummer: "0123/456789", mailadresse: "lena@beispiel.de", sozial: false },
   schach: "de",
   abschnitte: [Angebot, Mathe, Englisch, Franzoesisch, Preise, UeberMich, Impressum],
+};
+
+// Oberflächentexte dieser Sprache, vue-i18n reicht sie per t("...") an die Bausteine
+export const nachrichten: Nachrichten = {
+  titel: "Frag Lena! - Nachhilfe in Mathe, Englisch und Französisch",
+  logo: "Frag Lena!",
+  knopf: "Schreib mir eine Nachricht",
+  kontakt: { adresse: "Adresse:", email: "Email:", absatz: "Schreib mir am besten eine E-Mail mit dem Thema, das gerade dran ist, oder benutze dieses Kontaktformular. Ich melde mich innerhalb eines Tages zurück." },
+  formular: {
+    name: "Dein Name",
+    mail: "Deine Email",
+    betreff: "Betreff",
+    nachricht: "Nachricht",
+    knopf: "Nachricht senden",
+  },
+  fuss: { telefon: "Telefon:" },
 };
 
 export default vorlage;
