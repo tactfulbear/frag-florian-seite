@@ -1,14 +1,14 @@
 import type { Seite } from "./index";
-import Angebot from "../abschnitte/vorlage/Angebot.vue";
-import Mathe from "../abschnitte/vorlage/Mathe.vue";
-import Englisch from "../abschnitte/vorlage/Englisch.vue";
-import Franzoesisch from "../abschnitte/vorlage/Franzoesisch.vue";
-import Preise from "../abschnitte/vorlage/Preise.vue";
-import UeberMich from "../abschnitte/vorlage/UeberMich.vue";
-import Impressum from "../abschnitte/vorlage/Impressum.vue";
+import Angebot from "../organisms/vorlage/Angebot.vue";
+import Mathe from "../organisms/vorlage/Mathe.vue";
+import Englisch from "../organisms/vorlage/Englisch.vue";
+import Franzoesisch from "../organisms/vorlage/Franzoesisch.vue";
+import Preise from "../organisms/vorlage/Preise.vue";
+import UeberMich from "../organisms/vorlage/UeberMich.vue";
+import Impressum from "../organisms/vorlage/Impressum.vue";
 
 // Beispielseite "Frag Lena!" für weitere Nachhilfelehrer (vorlage.html).
-// Eine neue Lehrerseite braucht nur diese Datei, den Ordner abschnitte/<name>/ und eine Hülle wie vorlage.html.
+// Eine neue Lehrerseite braucht nur diese Datei, den Ordner organisms/<name>/ und eine Hülle wie vorlage.html.
 const vorlage: Seite = {
   logo: "Frag Lena!",
   start: "vorlage.html",
